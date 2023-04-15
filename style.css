@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 2rem 8%;
+}
+.box{
+    padding: 2rem;
+}
+.one{
+    background: #000;
+}
+
+.two{
+    background: #6e1818;
+}
+
+.tree{
+    background: #139b4c;
+}
+
+@media (max-width: 789px) {
+    .container{
+        grid-template-columns: 100%;
+    }
+}
