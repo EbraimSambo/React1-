@@ -26,8 +26,30 @@
     background: #139b4c;
 }
 
+.grid-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 7%;
+    align-items: center;
+    gap: 2rem;
+}
+.img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.content{
+    border: 1px solid #111;
+    padding: 1rem;
+    grid-column: span 1;
+}
 @media (max-width: 789px) {
     .container{
         grid-template-columns: 100%;
+    }
+
+    .grid-container{
+        flex-direction: column;
     }
 }
