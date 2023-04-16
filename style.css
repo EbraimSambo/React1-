@@ -44,6 +44,19 @@
     padding: 1rem;
     grid-column: span 1;
 }
+
+.gridMicrosoft{
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0,1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 7%;
+}
+
+.gridMicrosoft .box{
+    grid-column: span 3 / span 3;
+}
 @media (max-width: 789px) {
     .container{
         grid-template-columns: 100%;
